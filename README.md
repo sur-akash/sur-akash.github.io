@@ -7,13 +7,20 @@ Pure HTML/CSS/JS, no build step, no dependencies.
 ## Structure
 
 ```
-index.html      # all content (hero, about, experience, projects, writing, education, skills, contact)
-styles.css      # navy + gold theme, Fraunces/Inter type, responsive to 900px and 680px breakpoints
+index.html      # all content (hero, quotes marquee, about, experience, projects, writing,
+                # education + moments, skills, life/hobbies, contact)
+styles.css      # modern dark theme: aurora gradients, glass cards, Space Grotesk/Inter,
+                # responsive at 900px and 680px breakpoints
 script.js       # mobile menu, scroll-spy, reveal-on-scroll animations
 serve.py        # local dev server
 assets/
-  profile.jpg            # LinkedIn profile photo
+  pro_pic.jpeg           # hero avatar (professional headshot)
+  hk-harbour.jpg, philippines-beach.jpg, can4cancer-run.jpg     # life section
+  mieca-2025.jpg, bizexpo-2023.jpg, iitp-convocation.jpg,
+  genai-squad.jpg                                               # moments strip
   Akash-Sur-Resume.pdf   # downloadable résumé
+  (IMG_*.jpg / DJI_*.jpeg / 1000023545.jpg = camera originals, gitignored;
+   the site uses the web-optimized copies above)
 ```
 
 ## Run locally

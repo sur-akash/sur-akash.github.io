@@ -1,3 +1,11 @@
 .DS_Store
 .claude/
 Akash Sur_resume_original.pdf
+
+# camera originals — site uses the web-optimized copies
+assets/IMG_*.jpg
+assets/IMG_*.JPG
+assets/DJI_*.jpeg
+assets/1000023545.jpg
+assets/9c1a7dbe-*.jpg
+assets/profile.jpg
