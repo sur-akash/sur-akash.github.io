@@ -474,21 +474,23 @@ a:hover { color: var(--terra-deep); }
   padding-left: 8px;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--terra), var(--line) 75%);
-}
-
 .tl-item {
   position: relative;
   padding: 0 0 44px 44px;
 }
 .tl-item:last-child { padding-bottom: 0; }
+
+/* connector runs exactly from this marker's center to the next one's */
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  bottom: -14px;
+  width: 2px;
+  background: rgba(191, 91, 61, 0.22);
+}
+.tl-item:last-child::before { display: none; }
 
 .tl-marker {
   position: absolute;
@@ -496,7 +498,7 @@ a:hover { color: var(--terra-deep); }
   top: 6px;
   width: 16px; height: 16px;
   border-radius: 50%;
-  background: var(--bg);
+  background: var(--bg-2);
   border: 3px solid var(--terra);
   box-shadow: 0 0 0 4px rgba(191, 91, 61, 0.14);
 }
