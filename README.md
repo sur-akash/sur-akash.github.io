@@ -9,8 +9,8 @@ Pure HTML/CSS/JS, no build step, no dependencies.
 ```
 index.html      # all content (hero, quotes marquee, about, experience, projects, writing,
                 # education + moments, skills, life/hobbies, contact)
-styles.css      # modern dark theme: aurora gradients, glass cards, Space Grotesk/Inter,
-                # responsive at 900px and 680px breakpoints
+styles.css      # modern lifestyle theme: warm cream + terracotta, Fraunces serif display,
+                # white cards, compact photo grids; responsive at 900px and 680px breakpoints
 script.js       # mobile menu, scroll-spy, reveal-on-scroll animations
 serve.py        # local dev server
 assets/
