@@ -18,7 +18,7 @@ assets/
   hk-harbour.jpg, philippines-beach.jpg, can4cancer-run.jpg     # life section
   mieca-2025.jpg, bizexpo-2023.jpg, iitp-convocation.jpg,
   genai-squad.jpg                                               # moments strip
-  Akash-Sur-Resume.pdf   # downloadable résumé
+  Resume_Akash_sur_1.pdf # downloadable résumé
   (IMG_*.jpg / DJI_*.jpeg / 1000023545.jpg = camera originals, gitignored;
    the site uses the web-optimized copies above)
 ```
