@@ -1084,12 +1084,11 @@ a:hover { color: var(--terra-deep); }
 .run-card blockquote {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(1.15rem, 2.1vw, 1.42rem);
+  font-size: clamp(1.05rem, 1.85vw, 1.34rem);
   font-weight: 500;
   line-height: 1.42;
   letter-spacing: -0.01em;
   color: var(--ink);
-  max-width: 46ch;
 }
 
 .run-interests {
@@ -1111,7 +1110,19 @@ a:hover { color: var(--terra-deep); }
   flex-shrink: 0;
 }
 
-.run-interests .life-chips { margin-bottom: 0; }
+.run-interests .life-chips {
+  margin-bottom: 0;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.run-interests .chip {
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  gap: 7px;
+  white-space: nowrap;
+}
+.run-interests .chip-ico { font-size: 0.9rem; }
 
 /* ---------- Contact ---------- */
 .contact {
@@ -1196,6 +1207,12 @@ a:hover { color: var(--terra-deep); }
 }
 
 /* ---------- Responsive ---------- */
+
+/* the six interest chips only fit on one row when there's real headroom */
+@media (max-width: 1000px) {
+  .run-interests .life-chips { flex-wrap: wrap; }
+}
+
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; gap: 34px; }
   .hero-photo { order: -1; }
