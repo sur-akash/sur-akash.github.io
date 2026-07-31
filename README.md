@@ -15,6 +15,9 @@ script.js       # mobile menu, scroll-spy, reveal-on-scroll animations
 serve.py        # local dev server
 assets/
   pro_pic.jpeg           # hero avatar (professional headshot)
+  celestix-logo.png      # Celestix badge, circle-cropped with alpha from Celestix.png
+                         # (regenerate: crop source to the badge circle, apply a round
+                         #  alpha mask, resize to 448px — see git history for the script)
   hk-harbour.jpg, philippines-beach.jpg, can4cancer-run.jpg     # life section
   mieca-2025.jpg, bizexpo-2023.jpg, iitp-convocation.jpg,
   genai-squad.jpg                                               # moments strip

@@ -665,7 +665,7 @@ a:hover { color: var(--terra-deep); }
 
 .celestix-mark {
   position: relative;
-  width: 150px; height: 150px;
+  width: 212px; height: 212px;
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -695,10 +695,17 @@ a:hover { color: var(--terra-deep); }
 }
 .celestix-orbit-2::after { background: #f7f1e6; box-shadow: 0 0 8px rgba(247, 241, 230, 0.7); }
 
-.celestix-core {
-  font-size: 2rem;
-  color: #e0996f;
-  text-shadow: 0 0 22px rgba(224, 153, 111, 0.6);
+.celestix-logo {
+  position: relative;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  /* warm the monochrome badge toward the page's cream + terracotta palette */
+  filter: sepia(0.3) saturate(1.35) hue-rotate(-8deg) brightness(1.04);
+  box-shadow:
+    0 0 0 1px rgba(224, 153, 111, 0.35),
+    0 0 26px rgba(224, 153, 111, 0.3),
+    0 8px 22px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes celestix-spin {
@@ -1224,9 +1231,9 @@ a:hover { color: var(--terra-deep); }
   .about-grid { grid-template-columns: 1fr; }
   .project-hero { grid-template-columns: 1fr; gap: 26px; padding: 28px 26px; }
   .project-hero-side { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; }
-  .celestix-mark { width: 96px; height: 96px; }
-  .celestix-orbit-2 { inset: 18px; }
-  .celestix-core { font-size: 1.4rem; }
+  .celestix-mark { width: 136px; height: 136px; }
+  .celestix-orbit-2 { inset: 17px; }
+  .celestix-logo { width: 78px; height: 78px; }
   .project-hero-side .tags { justify-content: flex-start; flex: 1 1 200px; }
   .project-grid { grid-template-columns: repeat(2, 1fr); }
   .writing-grid { grid-template-columns: 1fr; }
