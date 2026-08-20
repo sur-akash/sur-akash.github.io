@@ -15,6 +15,8 @@ script.js       # mobile menu, scroll-spy, reveal-on-scroll animations
 serve.py        # local dev server
 assets/
   pro_pic.jpeg           # hero avatar (professional headshot)
+  bankwest-home-lockup.svg # brand plate on the Bankwest Home card (from that repo's
+                         # assets/img/bankwest-home-outlined.svg)
   celestix-logo.png      # Celestix badge, circle-cropped with alpha from Celestix.png
                          # (regenerate: crop source to the badge circle, apply a round
                          #  alpha mask, resize to 448px — see git history for the script)

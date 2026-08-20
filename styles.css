@@ -771,6 +771,56 @@ a:hover { color: var(--terra-deep); }
 .project-card em { font-style: italic; }
 .project-card strong { color: var(--ink); }
 
+/* ---------- Bankwest Home card ---------- */
+.project-card--bankwest {
+  --bw-orange: #ff9c35;
+  --bw-ink: #14100c;
+  overflow: hidden;
+  border-color: rgba(20, 16, 12, 0.14);
+}
+
+.project-card--bankwest:hover {
+  border-color: var(--bw-orange);
+  box-shadow: 0 14px 40px rgba(20, 16, 12, 0.16);
+}
+
+/* full-bleed brand plate at the top of the card */
+.bw-cover {
+  display: block;
+  margin: -26px -26px 18px;
+  background: var(--bw-orange);
+  border-bottom: 3px solid var(--bw-ink);
+  line-height: 0;
+}
+
+.bw-cover img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.35s ease;
+}
+.project-card--bankwest:hover .bw-cover img { transform: scale(1.03); }
+
+.project-card--bankwest .project-links a:hover {
+  border-color: var(--bw-ink);
+  color: var(--bw-ink);
+  background: var(--bw-orange);
+}
+
+.bw-note {
+  font-size: 0.74rem !important;
+  color: var(--muted) !important;
+  flex-grow: 0 !important;
+  margin-bottom: 14px !important;
+  padding-left: 10px;
+  border-left: 2px solid var(--bw-orange);
+}
+
+.project-card--bankwest .tags span {
+  background: rgba(255, 156, 53, 0.14);
+  border-color: rgba(255, 156, 53, 0.4);
+  color: #8a5a1d;
+}
+
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags span {
   font-size: 0.75rem;
