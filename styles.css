@@ -815,6 +815,60 @@ a:hover { color: var(--terra-deep); }
   border-left: 2px solid var(--bw-orange);
 }
 
+/* ---------- CommTravel card ---------- */
+.project-card--commtravel {
+  --ct-yellow: #fde415;
+  --ct-ink: #0d0d0d;
+  overflow: hidden;
+  border-color: rgba(13, 13, 13, 0.14);
+}
+
+.project-card--commtravel:hover {
+  border-color: var(--ct-yellow);
+  box-shadow: 0 14px 40px rgba(13, 13, 13, 0.18);
+}
+
+/* full-bleed brand plate, mirroring the Bankwest card's */
+.ct-cover {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: -26px -26px 18px;
+  padding: 0 26px;
+  /* same 840:160 ratio as the Bankwest plate, so the two sit level at any width */
+  aspect-ratio: 5.25 / 1;
+  background: var(--ct-ink);
+  /* rule drawn outside the ratio box (like Bankwest's border) so both plates match */
+  box-shadow: 0 3px 0 0 var(--ct-yellow);
+  color: #fff;
+  font-size: 1.24rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.ct-cover img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  transition: transform 0.35s ease;
+}
+.project-card--commtravel:hover .ct-cover img { transform: rotate(90deg); }
+.ct-cover:hover { color: #fff; }
+
+.project-card--commtravel .project-links a:hover {
+  border-color: var(--ct-ink);
+  color: var(--ct-ink);
+  background: var(--ct-yellow);
+}
+
+.ct-note { border-left: 2px solid var(--ct-yellow); }
+
+.project-card--commtravel .tags span {
+  background: rgba(253, 228, 21, 0.2);
+  border-color: rgba(180, 158, 0, 0.4);
+  color: #6b5d00;
+}
+
 .project-card--bankwest .tags span {
   background: rgba(255, 156, 53, 0.14);
   border-color: rgba(255, 156, 53, 0.4);
