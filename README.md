@@ -17,6 +17,7 @@ assets/
   pro_pic.jpeg           # hero avatar (professional headshot)
   bankwest-home-lockup.svg # brand plate on the Bankwest Home card (from that repo's
                          # assets/img/bankwest-home-outlined.svg)
+  strava_logo_icon_147232.svg # icon on the Strava link beside the running quote
   celestix-logo.png      # Celestix badge, circle-cropped with alpha from Celestix.png
                          # (regenerate: crop source to the badge circle, apply a round
                          #  alpha mask, resize to 448px — see git history for the script)
