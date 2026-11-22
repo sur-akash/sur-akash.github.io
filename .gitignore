@@ -10,3 +10,9 @@ assets/1000023545.jpg
 assets/9c1a7dbe-*.jpg
 assets/profile.jpg
 assets/Celestix.png
+
+# editable résumé source (the built PDF in assets/ is what ships)
+resume-src/
+design-src/
+assets/Professional Office Headshot.png
+private/
