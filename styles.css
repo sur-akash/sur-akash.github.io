@@ -234,6 +234,9 @@ h1 em, h2 em, .more-title em {
 .stage.done .node { border-color: var(--product); }
 .stage-year { margin-top: 12px; color: var(--muted); font: 400 .7rem var(--mono); letter-spacing: .08em; }
 .stage-name { margin-top: 4px; color: var(--muted); font: 600 1.08rem/1.15 var(--display); transition: color .3s; }
+.stage-co { margin-top: 4px; color: var(--muted); font: 600 .92rem/1.2 Geist, system-ui, sans-serif; }
+.stage-co b { color: var(--product); font-weight: inherit; }
+.stage.on .stage-co { color: var(--fg); }
 .stage-verb { margin-top: 3px; color: var(--muted); font-size: .78rem; }
 .stage.on .stage-year { color: var(--data); }
 .stage.on .stage-name { color: var(--fg); }
@@ -572,7 +575,7 @@ h1 em, h2 em, .more-title em {
   .career-fill, .career-runner { display: none; }
   .stages { grid-template-columns: minmax(0, 1fr); }
   .stage { display: grid; grid-template-columns: 15px minmax(0, 1fr); column-gap: 18px; padding: 0 0 16px; }
-  .stage .node { grid-row: span 3; margin-top: 1px; }
+  .stage .node { grid-row: span 4; margin-top: 1px; }
   .stage-year { margin: 0; }
   .stage.on .node { border-color: var(--signal); background: var(--signal); }
   .metric-tree { grid-template-columns: repeat(2, minmax(0, 1fr)); }
